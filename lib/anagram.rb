@@ -4,4 +4,8 @@ class Anagram
   def initialize(word)
     @inst = word
   end
+
+  def match(arr)
+    arr.each { |e| e.sort == @inst.split("") }
+  end
 end
